@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Festival Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>College Festival Registration</h2>
+
+    <form id="registrationForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="usn" placeholder="USN" required>
+        <input type="text" id="department" placeholder="Department" required>
+
+        <select id="activity" required>
+            <option value="">Select Activity</option>
+            <option value="Dance">Dance</option>
+            <option value="Singing">Singing</option>
+            <option value="Drama">Drama</option>
+            <option value="Coding">Coding</option>
+            <option value="Sports">Sports</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h3>Registered Students</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl.No</th>
+                <th>Name</th>
+                <th>USN</th>
+                <th>Department</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
